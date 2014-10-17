@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="50dp"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:id="@+id/llMessageBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@drawable/message_in"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <com.allenwang.pjtsms.MessageTextView
+            android:id="@+id/tvMessageBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:padding="5dp"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/tvMessageDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#65879e" />
+    </LinearLayout>
+
+</LinearLayout>
